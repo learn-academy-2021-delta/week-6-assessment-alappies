@@ -6,15 +6,15 @@
 
 # FILE: app/controller/blog_posts_controller.rb
 
-
+#----1a)This Blog post controller is the basically the App.js page, this is where you would write all the methods used in the app.
 class BlogPostsController < ApplicationController
   def index
-  # ---1) This Blog post controller is the basically the App.js page, this is where you would write all the methods used in the app. this method is deffining the index page that will most likely host all the titles of the posts to this site and will serve as the home page. 
+  # ---2)  The index will show all the blog posts that are created on an index page/home page
     @posts = BlogPost.all
   end
 
   def show
-  # ---2) This is the method for the show page and this where the app will display a single instance of a post. 
+  # ---3) This is the method for the show page and this where the app will display a single instance of a post. 
     @post = BlogPost.find(params[:id])
   end
 
