@@ -10,6 +10,7 @@
 class BlogPostsController < ApplicationController
   def index
    # ---2)  The index will show all the blog posts that are created on an index page/home page
+
     @posts = BlogPost.all
   end
 
