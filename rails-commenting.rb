@@ -9,7 +9,8 @@
 #----1a)This Blog post controller is the basically the App.js page, this is where you would write all the methods used in the app.
 class BlogPostsController < ApplicationController
   def index
-  # ---2)  The index will show all the blog posts that are created on an index page/home page
+   # ---2)  The index will show all the blog posts that are created on an index page/home page
+
     @posts = BlogPost.all
   end
 
